@@ -1,0 +1,61 @@
+Language: Javascript
+
+-------------------------------------------------------------------------------------------------------------
+Prompt: determine whether all the elements in a string are unique
+
+-------------------------------------------------------------------------------------------------------------
+Constraints: cant convert to array, or use array methods, spaces dont count towards char uniqueness? they do
+
+-------------------------------------------------------------------------------------------------------------
+Example:
+	Input: "hello"
+  Output: false
+
+  Input: "copyright"
+  Output: true
+
+-------------------------------------------------------------------------------------------------------------  
+Pseudocode: 
+
+// take in string
+// iterate through each element in our string i
+// iterate through each element in our string j for each i
+// compare i to j 
+// if i= j return false
+// else returning true
+// bool true false
+
+-------------------------------------------------------------------------------------------------------------
+Code:
+
+function isUnique(string) {
+  for(let i=0; i < string.length; i++) {
+    for(let j = i+1; j < string.length; j++) {
+      if(sting.charAt(j)) == (sting.charAt(i)) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+
+in the case of spaces?
+function isUnique(string) {
+  for(let i=0; i < string.length; i++) {
+    for(let j = i+1; j < string.length; j++) {
+      if(sting.charAt(j)) == (sting.charAt(i)) && (string.charAt(j) != (" ")){
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+-------------------------------------------------------------------------------------------------------------
+Code Example:
+	Input: "dragon"
+  Output: true
+
+  Input: "book"
+  Output: false
