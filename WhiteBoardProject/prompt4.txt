@@ -31,7 +31,7 @@ Code:
 function isUnique(string) {
   for(let i=0; i < string.length; i++) {
     for(let j = i+1; j < string.length; j++) {
-      if(sting.charAt(j)) == (sting.charAt(i)) {
+      if(sting.charAt(j)) == (string.charAt(i)) {
         return false;
       }
     }
@@ -44,7 +44,7 @@ in the case of spaces?
 function isUnique(string) {
   for(let i=0; i < string.length; i++) {
     for(let j = i+1; j < string.length; j++) {
-      if(sting.charAt(j)) == (sting.charAt(i)) && (string.charAt(j) != (" ")){
+      if(string.charAt(j)) == (string.charAt(i)) && (string.charAt(j) != (" ")){
         return false;
       }
     }
